@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Pop Up Notification</title>
+        <link rel="stylesheet" href="pop_up.css">
+        <script src="https://kit.fontawesome.com/234f4df401.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <button class="submit" onclick="openPopup()">Submit</button>
+        <div class="popup" id="popup">
+            <img src="tick.png">
+            <h2>Thank You</h2>
+            <p>Your details has been successfully submitted. Thanks!</p>
+            <button type="button" onclick="closePopup()">OK</button>
+        </div>
+        
+
+        <script>
+
+            let popup = document.getElementById("popup");
+
+            function openPopup(){
+                popup.classList.add("open-popup");
+            }
+            function closePopup(){
+                popup.classList.remove("open-popup");
+            }
+
+
+        </script>
+
+    </body>
+
+</html>
